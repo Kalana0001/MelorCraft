@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.contact{
+width: 100%;
+height: 100%;
+background-color: #0e0f0f;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 1rem;
+
+}
+
+.cform1{
+display: flex;
+flex-direction: column;
+max-width: 600px;
+width: 100%;
+
+}
+.cdiv1{
+padding-bottom: 2rem;
+}
+.cp1{
+font-size: 2.25rem;
+font-weight: bold;
+display: inline;
+border-bottom-width: 0.25rem; 
+border-bottom-style: solid;
+border-bottom-color: white; 
+color: white;
+
+}
+.cp2{
+color: white;
+padding-top: 1rem; 
+padding-bottom: 1rem; 
+
+}
+
+.cbtn1{
+color: white; 
+border-width: 2px; 
+padding: 0.75rem 1rem; 
+margin-top: 2rem; 
+margin-bottom: 2rem; 
+margin-left: auto; 
+margin-right: auto; 
+display: flex; 
+align-items: center; 
+transition: background-color 0.3s, border-color 0.3s; 
+cursor: pointer;
+font-weight: 20px;
+
+}
+
+/* Styling for the entire contact section */
+
+  /* Styling for the form box */
+  .form-box {
+    background-color: transparent;
+    border: 8px solid #0a192f;
+    padding: 20px; 
+    box-shadow: -5px -5px 15px white;
+    border-radius: 20px;
+   inset: -5px -5px 15px rgba(255, 255, 255, 0.1);
+   margin-top: 50px;
+   margin-bottom: 50px;
+  }
+  
+  /* Styling for the form title and description */
+  .cdiv1 {
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+  
+  .cp2 {
+    font-size: 16px;
+    color: white;
+  }
+  
+  /* Styling for form input fields and textarea */
+  .cinput1,
+  .cinput2,
+  .cinput3 {
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #0a192f;
+    border-radius: 4px; 
+    background-color: transparent;
+    box-shadow: -5px -5px 15px white;
+    border-radius: 20px;
+   inset: -5px -5px 15px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Styling for the submit button */
+  .cbtn1 {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color:#00dfc4; 
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; 
+    box-shadow: -3px -3px 3px white;
+    
+  }.cbtn1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.5);
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform 0.3s ease;
+    z-index: -1;
+  }
+  
+  .cbtn1:hover {
+    background-color: red; 
+  }
+  
+  

@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins: wght@300;400;500; 600; 700; 800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.App{
+    width: 100%;
+    height: 100%;
+    background-color: #0e0f0f;
+}
+.scard1{
+    position: relative;
+    width: 400px;
+    height: 220px;
+    background-color: transparent;
+    inset: -5px -5px 15px rgba(255, 255, 255, 0.1);
+    box-shadow: -5px -5px 15px white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin-bottom: 50px;  
+}
+.flex-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding-top: 50px;
+}
+.flex-container2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    
+}
+.scard1:hover{
+    width: 500px;
+    transition-delay: 0s;
+}
+.scard1 .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.scard1 .circle::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    clip-path: circle(100px at center );
+    transition: 0.5s;
+}
+.scard1:hover .circle:before{
+    clip-path: circle(400px at center);
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    
+}
+.scard1 img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 170px;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    transition: 0.5s;
+}
+.scard1:hover img{
+    left: 78%;
+    height: 210px;
+    
+}
+.scard1 .content{
+    position: relative;
+    width: 61%;
+    left: 1%;
+    padding: 5px 12px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: -1s;
+}
+
+.scard1:hover .content{
+    
+    opacity: 1;
+    visibility: visible;
+
+}
+.scard1 .content h2{
+    color: #050505;
+    text-transform: uppercase;
+    font-weight: bolder;
+    line-height: 1em;
+    font-size: 200%;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    
+    
+}
+
+.scard1 .content p{
+    color: black;
+    font-weight: 400;
+    
+    
+}
+
+.scard1 .content a{
+    position: relative;
+    color: black;
+    padding: 7px 14px;
+    border-radius: 8px;
+    background-color:#00dfc4;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 2px;
+   margin-top: 10px;
+
+}
+
+.scard1 .content a:hover{
+    background-color: red; 
+}
+@media (max-width: 991px)
+{
+    .scard1{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px; 
+
+    }
+
+    .card:hover{
+        height: 600px;
+    }
+
+    .scard1 .content{
+        width: 100%;
+        left: 0;
+        padding: 40px;
+
+    }
+
+    .scard1:hover img{
+        top:180px;
+        height: 100px;
+    }
+    .scard1 .content a{
+       bottom: 10px;
+       padding: 5px 10px;
+    }
+}
+@media (max-width: 420px){
+    .scard1 .content{
+        
+        padding: 30px;
+
+    }
+
+}
